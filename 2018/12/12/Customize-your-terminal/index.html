@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="" class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AlfathDirk - Alfath Dirk Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="Si Alfath si jarang mandi, tapi tetap tampan walau bau ketumbar,Ini adalah contoh beberapa syntax untuk merubah tampilan terminal console kalian
+cari variable PS1 ,"> 
+    <meta name="author" content="Alfath Dirk"> 
+    <link rel="alternative" href="atom.xml" title="AlfathDirk" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+</head>
+</html>
+<body class="loading">
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;"></a>
+    <div title="Play/Pause" class="icon-play"></div>
+    <h3 class="subtitle">Customize your terminal</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="QrCode" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title">Customize your terminal</h1>
+        <div class="stuff">
+            <span>December 12, 2018</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <p>Ini adalah contoh beberapa syntax untuk merubah tampilan terminal console kalian</p>
+<p>cari variable PS1 jika setiap value nya dirubah interface pada command line bakal berubah<br>oke ini gua kasih referensi nya</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PS1 : The value of PS1 is expanded and used as the primary prompt string. The default value is \s-\v\$ . </span><br><span class="line">PS2 : The value of this parameter is expanded as with PS1 and used as the secondary prompt string. The default is &amp;gt; </span><br><span class="line">PS3 : The value of this parameter is used as the prompt <span class="keyword">for</span> the select <span class="built_in">command</span> </span><br><span class="line">PS4 : The value of this parameter is expanded as with PS1 and the value is printed before each <span class="built_in">command</span> bash displays during an execution trace. The first character of PS4 is replicated multiple <span class="built_in">times</span>, as necessary, to indicate multiple levels of indirection. The default is +</span><br></pre></td></tr></table></figure>
+<p>3.kita coba bikin sendiri dulu<br>tulis di terminal<br><code>PS1=&quot;Im a Boss :</code></p>
+<p><img src="https://alfathdirk.files.wordpress.com/2015/06/bos.png" alt="image"></p>
+<p>nah seperti itu hasilnya</p>
+<p>ini Code PS1 gua<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PS1=\n \[\e[1;37m\]┌─[\[\e[1;36m\] \d \[\e[1;31m\]\T \[\e[1;37m\]] \n\[\e[1;37m\] └─[ \u\[\e[1;34m\]@ \[\e[1;32m\]\w \[\e[1;37m\]]\[\e[1;35m\]---&amp;gt; \[\e[0;37m\]</span><br></pre></td></tr></table></figure></p>
+<p>Copy code tersebut di .bashrc atau di .profile </p>
+<p>List special character </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">\a : an ASCII bell character (07) </span><br><span class="line">\d : the date <span class="keyword">in</span> <span class="string">"Weekday Month Date"</span> format (<span class="string">"Tue May 26"</span>) </span><br><span class="line">\D&#123;format&#125; : the format is passed to strftime(3) and the result is inserted into the prompt string; an empty format results <span class="keyword">in</span> a locale-specific time representation. The braces are required </span><br><span class="line">\e : an ASCII escape character (033) </span><br><span class="line">\h : the hostname up to the first <span class="string">'.'</span> </span><br><span class="line">\H : the hostname </span><br><span class="line">\j : the number of <span class="built_in">jobs</span> currently managed by the shell </span><br><span class="line">\l : the basename of the shell’s terminal device name </span><br><span class="line">\n : newline </span><br><span class="line">\r : carriage <span class="built_in">return</span> </span><br><span class="line">\s : the name of the shell, the basename of <span class="variable">$0</span> (the portion following the final slash) </span><br><span class="line">\t : the current time <span class="keyword">in</span> 24-hour HH:MM:SS format </span><br><span class="line">\T : the current time <span class="keyword">in</span> 12-hour HH:MM:SS format </span><br><span class="line">\@ : the current time <span class="keyword">in</span> 12-hour am/pm format </span><br><span class="line">\A : the current time <span class="keyword">in</span> 24-hour HH:MM format </span><br><span class="line">\u : the username of the current user </span><br><span class="line">\v : the version of bash (e.g., 2.00) </span><br><span class="line">\V : the release of bash, version + patch level (e.g., 2.00.0) </span><br><span class="line">\w : the current working directory, with <span class="variable">$HOME</span> abbreviated with a tilde </span><br><span class="line">\W : the basename of the current working directory, with <span class="variable">$HOME</span> abbreviated with a tilde </span><br><span class="line">\! : the <span class="built_in">history</span> number of this <span class="built_in">command</span> </span><br><span class="line">\<span class="comment"># : the command number of this command </span></span><br><span class="line">\$ : <span class="keyword">if</span> the effective UID is 0, a <span class="comment">#, otherwise a $ </span></span><br><span class="line">\nnn : the character corresponding to the octal number nnn </span><br><span class="line">\\ : a backslash </span><br><span class="line">\[ : begin a sequence of non-printing characters, <span class="built_in">which</span> could be used to embed a terminal control sequence into the prompt </span><br><span class="line">\] : end a sequence of non-printing characters</span><br></pre></td></tr></table></figure>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci="" data-cs="" data-r="" data-o="" data-a="" data-d="false">Comment</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
