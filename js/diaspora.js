@@ -466,17 +466,35 @@ $(function() {
             case - 1 != tag.indexOf("comment"): 
                 Diaspora.loading(),
                 comment = $('#gitalk-container');
-                gitalk = new Gitalk({
-                  clientID: comment.data('ci'),
-                  clientSecret: comment.data('cs'),
-                  repo: comment.data('r'),
-                  owner: comment.data('o'),
-                  admin: comment.data('a'),
-                  id: decodeURI(window.location.pathname),
-                  distractionFreeMode: comment.data('d')
-                })
+                var disqus_shortname = comment.data('ds');
+                var pageComment = comment.data('pc');
+                var pagePermalink = comment.data('pm');
+                var durl = comment.data('durl');
+                // gitalk = new Gitalk({
+                //   clientID: comment.data('ci'),
+                //   clientSecret: comment.data('cs'),
+                //   repo: comment.data('r'),
+                //   owner: comment.data('o'),
+                //   admin: comment.data('a'),
+                //   id: decodeURI(window.location.pathname),
+                //   distractionFreeMode: comment.data('d')
+                // })
+
+                if (pagePermalink) {
+                    var disqus_url = durl;
+                }
+
+                (function(){
+                    var dsq = document.createElement('script');
+                    dsq.type = 'text/javascript';
+                    dsq.async = true;
+                    // dsq.src = '//' + disqus_shortname + '.disqus.com/'
+                    dsq.src = `http://alfathdirk.disqus.com/${pageComment ? 'embed.js' : 'count.js'}`;
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+
                 $(".comment").removeClass("link")
-                gitalk.render('gitalk-container')
+                $('#gitalk-container').html('<div id="disqus_thread"></div>')
                 Diaspora.loaded();
                 return false;
                 break;
