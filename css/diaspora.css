@@ -94,7 +94,7 @@ body.mu .icon-logo {color:#333;}
 .nav p a {color:#999;text-decoration:underline;}
 .nav p:first-letter {font-family:sans-serif;}
 #container {padding-bottom:100px;overflow:hidden;position:relative;}
-#container:before {content:'';display:block;width:1px;height:200%;position:absolute;left:50%;background:#eaeaea;top:-50%;z-index:0;}
+#container:before {content:'';display:block;width:2px;height:200%;position:absolute;left:50%;background:#8ea5b9;top:-50%;z-index:0;}
 #primary {position:relative;}
 #single {background:#fff;position:relative;overflow-x:hidden;}
 .section {position:relative;width:100%;overflow:hidden;-webkit-transition:all 0.3s cubic-bezier(0.25,0.5,0.5,0.9);-moz-transition:all 0.3s cubic-bezier(0.25,0.5,0.5,0.9);transition:all 0.3s cubic-bezier(0.25,0.5,0.5,0.9);}
