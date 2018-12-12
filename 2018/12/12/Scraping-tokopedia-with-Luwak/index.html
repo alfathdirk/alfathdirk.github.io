@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="" class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AlfathDirk - Alfath Dirk Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Alfathdirk,"> 
+    <meta name="description" content="Si Alfath si jarang mandi, tapi tetap tampan walau bau ketumbar,Ini adalah contoh beberapa syntax untuk merubah tampilan terminal console kalian
+cari variable PS1 ,"> 
+    <meta name="author" content="Alfath Dirk"> 
+    <link rel="alternative" href="atom.xml" title="AlfathDirk" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+</head>
+</html>
+<body class="loading">
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;"></a>
+    <div title="Play/Pause" class="icon-play"></div>
+    <h3 class="subtitle">Scraping tokopedia with Luwak</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="QrCode" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title">Scraping tokopedia with Luwak</h1>
+        <div class="stuff">
+            <span>December 12, 2018</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <p>Kali ini bahasan kita adalah scraping atau mengambil data tokopedia, bukan hacking tapi mengambil konten2 yg dapat diakses oleh semua pihak dengan memilih konten yg diperlukan untuk di tampilkan di situs milik kita</p>
+<h3 id="Install-Luwak"><a href="#Install-Luwak" class="headerlink" title="Install Luwak"></a>Install Luwak</h3><p>Luwak disini bukan white coffee yg aman dilambung ga bikin kembung, tapi tools untuk melakukan scrapping, yg setiap data web DOM akan langsung diolah menjadi bentuk <code>JSON</code>, amazing bukan tools satu ini, oke langsung aja masuk console/terminal kalian</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install luwak</span><br></pre></td></tr></table></figure>
+<h2 id="Write-File"><a href="#Write-File" class="headerlink" title="Write File"></a>Write File</h2><p>Kemudian bikin file <code>index.js</code></p>
+<p>disini kita akan mengambil konten flash sale<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> url = <span class="string">'http://ace.tokopedia.com/hoth/discovery/render/component/desktop/flash-sale/62532?rpc_Page=1&amp;rpc_ResultPerPage=20'</span>;</span><br><span class="line"><span class="keyword">let</span> data = <span class="keyword">await</span> luwak(url)</span><br><span class="line">      .filter(<span class="string">'hitung'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">let</span> newString = value.replace(<span class="string">'200-square'</span>, <span class="string">'700'</span>)</span><br><span class="line">        <span class="keyword">return</span> newString;</span><br><span class="line">      &#125;)</span><br><span class="line">      .select([&#123;</span><br><span class="line">          <span class="string">'$root'</span>: <span class="string">'.td_col__5'</span>,</span><br><span class="line">          judul: <span class="string">'h1'</span>,</span><br><span class="line">          priceAfter: <span class="string">'.price-after'</span>,</span><br><span class="line">          priceBefore: <span class="string">'.price-before'</span>,</span><br><span class="line">          image: <span class="string">'img@src | hitung'</span>,</span><br><span class="line">          link: <span class="string">'a@href'</span></span><br><span class="line">      &#125;])</span><br><span class="line">      .fetch();</span><br></pre></td></tr></table></figure></p>
+<p><code>$root</code> = adalah inti dari tag html yg ingin kalian ambil content nya *(required use)</p>
+<p><code>judul</code> = adalah penamaan object json untuk text yg berada di h1 contoh <code>&lt;h1&gt;anu&lt;/h1&gt;</code> , akan menampilkan anu</p>
+<p>dan seterusnya..<br>method <code>.filter()</code> berfungsi untuk mengevaluasi return value.</p>
+<h2 id="Execute-Code"><a href="#Execute-Code" class="headerlink" title="Execute Code"></a>Execute Code</h2><p>Saatnya eksekusi code nya</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node index.js</span><br></pre></td></tr></table></figure>
+<p>ouputnya akan seperti ini</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[ &#123; judul: 'SOUL UPBEAT High Performance Earphones - Hitam',</span><br><span class="line">    priceAfter: 'Rp 121.212',</span><br><span class="line">    priceBefore: 'Rp 224.850',</span><br><span class="line">    image:</span><br><span class="line">     'https://ecs7.tokopedia.net/img/cache/700/product-1/2018/11/27/21256362/21256362_d447a784-2cdf-48fa-af7e-491119482336_800_800.jpg',</span><br><span class="line">    link:</span><br><span class="line">     'https://www.tokopedia.com/soulofficial/soul-upbeat-high-performance-earphones-hitam?trkid=f%3DP0Cb0_src%3Dsprint-sale_page%3D1_ob%3D17_catid%3D565' &#125;,</span><br><span class="line">  &#123; judul: 'Vaneli Crystal 134 gr FS',</span><br><span class="line">    priceAfter: 'Rp 12.750',</span><br><span class="line">    priceBefore: 'Rp 15.000',</span><br><span class="line">    image:</span><br><span class="line">     'https://ecs7.tokopedia.net/img/cache/700/product-1/2017/10/9/22998910/22998910_711e7a8c-896d-4ff2-8d44-3450da23568f_576_576.jpg',</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+<p>mudah bukan??<br>ini adalah contoh dengan method basic, Luwak ini dapat menggunakan middleware engine, contoh seperti <code>nightmare</code>, dsb</p>
+<p>penggunaan engine biasanya dipakai jika web tidak bisa discrap menggunakan basic seperti ini, untuk lebih lengkap contoh penggunaan middleware engine luwak bisa lihat <a href="https://github.com/xinix-technology/luwak/tree/master/examples" target="_blank" rel="noopener">disini</a>.</p>
+<p>Thanks to <a href="https://github.com/reekoheek" target="_blank" rel="noopener">reekoheek</a>, buat tools keren nya !!</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci="" data-cs="" data-r="" data-o="" data-a="" data-d="false">Comment</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
