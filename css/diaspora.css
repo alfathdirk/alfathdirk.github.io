@@ -288,3 +288,11 @@ pre .keyword,pre .javascript .function {color:#cc99cc;}
   .comment .gt-btn-public .gt-btn-text:after{content:"";}
 }
 
+.h_iframe iframe {
+  width:100%;
+  
+}
+.h_iframe {
+  
+  width:100%;
+}
