@@ -489,7 +489,7 @@ $(function() {
                     dsq.type = 'text/javascript';
                     dsq.async = true;
                     // dsq.src = '//' + disqus_shortname + '.disqus.com/'
-                    dsq.src = `http://alfathdirk.disqus.com/${pageComment ? 'embed.js' : 'count.js'}`;
+                    dsq.src = `https://alfathdirk.disqus.com/${pageComment ? 'embed.js' : 'count.js'}`;
                     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
                 })();
 
