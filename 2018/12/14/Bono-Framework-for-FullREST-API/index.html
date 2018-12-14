@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="" class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AlfathDirk - Alfath Dirk Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Alfathdirk,"> 
+    <meta name="description" content="Si Alfath si jarang mandi, tapi tetap tampan walau bau ketumbar,"> 
+    <meta name="author" content="Alfath Dirk"> 
+    <link rel="alternative" href="atom.xml" title="AlfathDirk" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+</head>
+</html>
+<body class="loading">
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;"></a>
+    <div title="Play/Pause" class="icon-play"></div>
+    <h3 class="subtitle">Bono Framework for FullREST API</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="QrCode" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title">Bono Framework for FullREST API</h1>
+        <div class="stuff">
+            <span>December 14, 2018</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>Hello guys, kali ini saya akan membahas tentang menggunakan bono framework, yg menurut saya penggunaan nya lebih mudah dibanding expressjs</p>
+<blockquote>
+<p><a href="https://github.com/reekoheek/node-bono" target="_blank" rel="noopener">Bono</a> is light and modular Node.js web application framework (based on Koa.js) to develop api and website.</p>
+</blockquote>
+<h2 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i bono</span><br></pre></td></tr></table></figure>
+<p>setelah itu kita buat satu file dengan nama <code>index.js</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="keyword">const</span> Bundle = <span class="built_in">require</span>(<span class="string">'bono'</span>);</span><br><span class="line"><span class="keyword">const</span> HTTP_PORT = <span class="number">8888</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> app = <span class="keyword">new</span> Bundle();</span><br><span class="line"></span><br><span class="line">app.use(<span class="built_in">require</span>(<span class="string">'bono/middlewares/json'</span>)());</span><br><span class="line"></span><br><span class="line">app.get(<span class="string">'/'</span>, (ctx) =&gt; <span class="string">'hello world'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> server = http.createServer(app.callback());</span><br><span class="line"></span><br><span class="line">server.listen(HTTP_PORT, () =&gt; <span class="built_in">console</span>.log(<span class="string">`server listen on port <span class="subst">$&#123;HTTP_PORT&#125;</span>`</span>));</span><br></pre></td></tr></table></figure>
+<p>kemudian jalan kan <code>node index.js</code></p>
+<p>buka browser pada alamat <a href="http://localhost:8888/" target="_blank" rel="noopener">localhost:8888</a></p>
+<p><code>app adalah Bundle dari keseluruhan index /</code></p>
+<h2 id="Create-modular-Bundle"><a href="#Create-modular-Bundle" class="headerlink" title="Create modular Bundle"></a>Create modular Bundle</h2><p>contoh kita akan membuat bundle dengan endpoint <code>/api</code> atau <code>/auth</code></p>
+<p><code>localhost:8888/api/[params]</code></p>
+<p>buat file baru dengan nama <code>api.js</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Bundle = <span class="built_in">require</span>(<span class="string">'bono'</span>);</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Api</span> <span class="keyword">extends</span> <span class="title">Bundle</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">super</span>();</span><br><span class="line">    <span class="keyword">this</span>.get(<span class="string">'/'</span>, <span class="keyword">this</span>.index.bind(<span class="keyword">this</span>));</span><br><span class="line">    <span class="keyword">this</span>.post(<span class="string">'/halo'</span>, <span class="keyword">this</span>.halo.bind(<span class="keyword">this</span>));</span><br><span class="line">    <span class="keyword">this</span>.get(<span class="string">'/user/:idUser'</span>, <span class="keyword">this</span>.getUser.bind(<span class="keyword">this</span>));</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  getUser(ctx) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`get id user <span class="subst">$&#123;ctx.params.idUser&#125;</span>`</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  halo() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Halo api post'</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  index(ctx) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Hello world from /api'</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="keyword">new</span> Api();</span><br></pre></td></tr></table></figure>
+<p>kemudian tambahkan di file <code>index.js</code> tadi</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> api = <span class="built_in">require</span>(<span class="string">'./api'</span>);</span><br><span class="line">app.bundle(<span class="string">'/api'</span>, api);</span><br></pre></td></tr></table></figure>
+<p>full code</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="keyword">const</span> Bundle = <span class="built_in">require</span>(<span class="string">'bono'</span>);</span><br><span class="line"><span class="keyword">const</span> HTTP_PORT = <span class="number">8888</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> api = <span class="built_in">require</span>(<span class="string">'./api'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> app = <span class="keyword">new</span> Bundle();</span><br><span class="line"></span><br><span class="line">app.use(<span class="built_in">require</span>(<span class="string">'bono/middlewares/json'</span>)());</span><br><span class="line">app.bundle(<span class="string">'/api'</span>, api); <span class="comment">// &lt;--=-== Here</span></span><br><span class="line"></span><br><span class="line">app.get(<span class="string">'/'</span>, (ctx) =&gt; <span class="string">'hello world'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> server = http.createServer(app.callback());</span><br><span class="line"></span><br><span class="line">server.listen(HTTP_PORT, () =&gt; <span class="built_in">console</span>.log(<span class="string">`server listen on port <span class="subst">$&#123;HTTP_PORT&#125;</span>`</span>));</span><br></pre></td></tr></table></figure>
+<p>eksekusi <code>node index.js</code>, buka browser dan arahkan ke endpoint /api/user/2..</p>
+<p>untuk method seperti this.get() ada <code>get()</code>,<code>post()</code>,<code>put()</code>,<code>patch()</code>,<code>delete()</code></p>
+<h2 id="Middleware"><a href="#Middleware" class="headerlink" title="Middleware"></a>Middleware</h2><p>penggunaan middleware, contoh <code>memverifikasi user atau memberi authentikasi dengan JWT pada setiap user yg akan mengakses ke endpoint `/api</code></p>
+<p>buat file <code>middlewareAuth.js</code> </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> jwt = <span class="built_in">require</span>(<span class="string">'jsonwebtoken'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="keyword">async</span> <span class="function"><span class="keyword">function</span>(<span class="params">ctx, next</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> token = ctx.get(<span class="string">'Authorization'</span>).split(<span class="string">' '</span>).pop();</span><br><span class="line">  <span class="keyword">if</span> (!token) &#123;</span><br><span class="line">    ctx.throw(<span class="number">401</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> verify = jwt.verify(token, <span class="string">'secret key'</span>);</span><br><span class="line">    ctx.state.user = &#123; ...verify &#125;;</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    ctx.throw(<span class="number">401</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">await</span> next();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>ctx.state.user</code> akan ada selalu di setiap context bundle</p>
+<p>setelah itu masukan middleware nya di bundle yg ingin kalian beri authentikasi, pada file index.js</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> middlewareAuth = <span class="built_in">require</span>(<span class="string">'./middlewareAuth'</span>)</span><br><span class="line">api.use(middlewareAuth);</span><br><span class="line"><span class="comment">// disini bundle `api` menggunakan authorization</span></span><br></pre></td></tr></table></figure>
+<p>selesai deh,</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="keyword">const</span> Bundle = <span class="built_in">require</span>(<span class="string">'bono'</span>);</span><br><span class="line"><span class="keyword">const</span> middlewareAuth = <span class="built_in">require</span>(<span class="string">'./middlewareAuth'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> HTTP_PORT = <span class="number">8888</span>;</span><br><span class="line"><span class="keyword">const</span> api = <span class="built_in">require</span>(<span class="string">'./api'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> app = <span class="keyword">new</span> Bundle();</span><br><span class="line"></span><br><span class="line">app.use(<span class="built_in">require</span>(<span class="string">'bono/middlewares/json'</span>)());</span><br><span class="line">api.use(middlewareAuth);</span><br><span class="line"></span><br><span class="line">app.bundle(<span class="string">'/api'</span>, api); <span class="comment">// &lt;--=-== Here</span></span><br><span class="line"></span><br><span class="line">app.get(<span class="string">'/'</span>, (ctx) =&gt; <span class="string">'hello world'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> server = http.createServer(app.callback());</span><br><span class="line"></span><br><span class="line">server.listen(HTTP_PORT, () =&gt; <span class="built_in">console</span>.log(<span class="string">`server listen on port <span class="subst">$&#123;HTTP_PORT&#125;</span>`</span>));</span><br></pre></td></tr></table></figure>
+<p>untuk liat full source code DEMO nya bisa langsung liat <a href="https://github.com/alfathdirk/node-bono-skeleton" target="_blank" rel="noopener">DISINI</a></p>
+<p>Sekian dan terimakasih, untuk bertanya2 silahkan komen dibawah</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://103.56.205.228:8800/gavin-cigarete.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    
+        <div id="gitalk-container" class="comment link" data-ds="alfathdirk" data-durl="http://alfathdirk.github.io/2018/12/14/Bono-Framework-for-FullREST-API/" data-pc="true">Comment</div>
+        
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41094759-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+</html>
