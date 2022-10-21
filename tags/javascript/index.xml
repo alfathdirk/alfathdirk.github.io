@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on hugo-theme-gruvbox</title>
+    <link>https://hugo-theme-gruvbox.schnerring.net/tags/javascript/</link>
+    <description>Recent content in javascript on hugo-theme-gruvbox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021</copyright>
+    <lastBuildDate>Thu, 20 Dec 2018 19:35:38 +0000</lastBuildDate><atom:link href="https://hugo-theme-gruvbox.schnerring.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Reactotron for Debugging React Native</title>
+      <link>https://hugo-theme-gruvbox.schnerring.net/blog/using-reactotron-for-debugging-react-native/</link>
+      <pubDate>Thu, 20 Dec 2018 19:35:38 +0000</pubDate>
+      
+      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/using-reactotron-for-debugging-react-native/</guid>
+      <description>Hi gais, kali ini gw mau bahas tools debuging ReactNative, tadi abis nyari tools debug, sebenernya ada banyak banget tapi gua nyoba salah satu nya, yaitu reactotron
+untuk mac install nya tinggal pake brew
+$ brew cask install reactotron $ npm i reactotron-react-native --save-dev # di project RN ya buka apps nya
+kemudian masuk ke project react native kalian, bikin satu file debugger.js
+paste code ini ke file tersebut
+import Reactotron from &amp;#39;reactotron-react-native&amp;#39; Reactotron .</description>
+    </item>
+    
+    <item>
+      <title>Bono Framework for FullREST API</title>
+      <link>https://hugo-theme-gruvbox.schnerring.net/blog/bono-framework-for-fullrest-api/</link>
+      <pubDate>Fri, 14 Dec 2018 15:38:36 +0000</pubDate>
+      
+      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/bono-framework-for-fullrest-api/</guid>
+      <description>Hello guys, kali ini saya akan membahas tentang menggunakan bono framework, yg menurut saya penggunaan nya lebih mudah dibanding expressjs
+Bono is light and modular Node.js web application framework (based on Koa.js) to develop api and website.
+Getting Started # npm i bono setelah itu kita buat satu file dengan nama index.js
+const http = require(&amp;#39;http&amp;#39;); const Bundle = require(&amp;#39;bono&amp;#39;); const HTTP_PORT = 8888; let app = new Bundle(); app.use(require(&amp;#39;bono/middlewares/json&amp;#39;)()); app.</description>
+    </item>
+    
+    <item>
+      <title>Instagram Bot AutoLike</title>
+      <link>https://hugo-theme-gruvbox.schnerring.net/blog/instagram-bot-autolike/</link>
+      <pubDate>Wed, 12 Dec 2018 00:19:29 +0000</pubDate>
+      
+      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/instagram-bot-autolike/</guid>
+      <description>Udah lama ga nge blog, dan nyoba themes baru hexo
+Bot like instagram # perlu diketahui CODE INI BUKAN BUAT DAPETIN LIKE BANYAK
+This code for like your timeline friends photo/video automatically
+pertama install alexis
+npm i alexis bikin file baru namain index.js
+kemudian paste code ini ke file index.js tadi yang baru dibuat
+const Ig = require(&amp;#39;alexis&amp;#39;); let ig = new Ig(); const TIMEOUT = 6000; // 6 seconds; const username = &amp;#39;username&amp;#39;; // ganti sama username dan password kalian const password = &amp;#39;password&amp;#39;; async function doLike () { try { await ig.</description>
+    </item>
+    
+    <item>
+      <title>React Native change App/Package Name</title>
+      <link>https://hugo-theme-gruvbox.schnerring.net/blog/react-native-change-app-package-name/</link>
+      <pubDate>Wed, 12 Dec 2018 00:07:01 +0000</pubDate>
+      
+      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/react-native-change-app-package-name/</guid>
+      <description>There are things one may need to change in the release build for Android. Things like App Name are a case here. Suppose you start developing by initialising to a generic App Name and at the time of release one need to change to the actual App Name.
+Generate with correct names
+Before we move forward and change things in the final version of the app. There is a way to fix this from the beginning.</description>
+    </item>
+    
+    <item>
+      <title>Signed apk to PlayStore</title>
+      <link>https://hugo-theme-gruvbox.schnerring.net/blog/self-signed-apk/</link>
+      <pubDate>Tue, 11 Dec 2018 23:33:52 +0000</pubDate>
+      
+      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/self-signed-apk/</guid>
+      <description>Hi today i want to share how to signed android apps to play store(react native,cordova,etc)
+your apk must be signed first.. signing your apk
+Generate your keystore
+keytool -genkey -v -dname &amp;#39;CN=Alfathdirk,OU=YourAPK,O=GeekyAnts,L=Indonesia,ST=Jakarta,C=IN&amp;#39; -keystore yourkeystore.keystore -keypass yourpassword -storepass yourpassword -alias yourkeystore -keyalg RSA -keysize 2048 -validity 10000 Download certificate
+download deployment_cert.der for your apps on https://play.google.com/apps/publish/ menu App Signing
+Validating and Zip your Apk
+keytool -importcert -file deployment_cert.der -keystore yourkeystore.keystore jarsigner -verbose -keystore yourkeystore.</description>
+    </item>
+    
+    <item>
+      <title>Line BOT Javascript</title>
+      <link>https://hugo-theme-gruvbox.schnerring.net/blog/line-bot-javascript/</link>
+      <pubDate>Wed, 06 Sep 2017 20:52:59 +0000</pubDate>
+      
+      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/line-bot-javascript/</guid>
+      <description>Oke gais, berhubung blog gua sebelum nya ke delete karena update blog dan lupa di push ke repo git gua mau bahas soal BOT LINE JAVASCRIPT
+Pre-Install # Required Node v8.x++
+Install # git clone https://github.com/alfathdirk/LineAlphatJS cd LineAlphatJS/ npm i Running # npm start dan akan muncul QRcode, silahkan scan atau paste di chat line kalian kemudian login
+Silakan Comment jika kurang jelas.. Thanks !</description>
+    </item>
+    
+  </channel>
+</rss>

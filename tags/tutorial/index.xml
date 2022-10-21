@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorial on hugo-theme-gruvbox</title>
+    <link>https://hugo-theme-gruvbox.schnerring.net/tags/tutorial/</link>
+    <description>Recent content in tutorial on hugo-theme-gruvbox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2021</copyright>
+    <lastBuildDate>Sat, 15 Dec 2018 21:05:17 +0000</lastBuildDate><atom:link href="https://hugo-theme-gruvbox.schnerring.net/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install php-Mongo driver on Windows XAMPP</title>
+      <link>https://hugo-theme-gruvbox.schnerring.net/blog/install-php-mongo-driver-on-windows-xampp/</link>
+      <pubDate>Sat, 15 Dec 2018 21:05:17 +0000</pubDate>
+      
+      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/install-php-mongo-driver-on-windows-xampp/</guid>
+      <description>Honestly im Linux/unix user, but in this case , i’ll make my MAC turn into jendela or fvcking windows
+I will configure MongoDB with PHP xampp. It is very easy to do. Oke let’s install latest XAMPP,
+cause i am using XAMPP ,
+here we go !! 1 Installing MongoDB
+2 Download MongoDB here
+3 Extract the archive , you will see all version of mongo.dll (read step 6)
+Check your Php version by going to http://localhost/phpinfo.</description>
+    </item>
+    
+    <item>
+      <title>AXEL alternative IDM for Linux/Mac</title>
+      <link>https://hugo-theme-gruvbox.schnerring.net/blog/axel-alternative-idm-for-linux-mac/</link>
+      <pubDate>Fri, 14 Dec 2018 00:14:30 +0000</pubDate>
+      
+      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/axel-alternative-idm-for-linux-mac/</guid>
+      <description>Axel is A light download accelerator for Linux. tapi axel ini berbentuk CLI / Command Line Interface..
+Nah Tujuan utamanya adalah bisa download , teserah lu mau download apaan aja .. Contoh gua mau download lagu dari link ini http://imondepression.com/sotd/mae%20-%20suspension.mp3
+tinggal tulis
+axel -v -a -n8 http://imondepression.com/sotd/mae%20-%20suspension.mp3 -v berguna buat verbose atau log2 -n Number of connection , yaitu memecah file yg didownload -a alternative view ,jd hanya 1 bar yang terlihat ,bisa liat gambar untuk liat opsi atau pertolongan tinggal tulis man axel</description>
+    </item>
+    
+  </channel>
+</rss>
