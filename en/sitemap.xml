@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hugo-theme-gruvbox.schnerring.net/</loc>
-    <lastmod>2022-10-22T12:11:00+07:00</lastmod>
+    <lastmod>2022-10-27T21:25:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -16,7 +16,10 @@
                 />
   </url><url>
     <loc>https://hugo-theme-gruvbox.schnerring.net/blog/</loc>
-    <lastmod>2022-10-22T12:11:00+07:00</lastmod>
+    <lastmod>2022-10-27T21:25:00+07:00</lastmod>
+  </url><url>
+    <loc>https://hugo-theme-gruvbox.schnerring.net/blog/nasihat-untuk-zara/</loc>
+    <lastmod>2022-10-27T21:25:00+07:00</lastmod>
   </url><url>
     <loc>https://hugo-theme-gruvbox.schnerring.net/blog/my-lovely-daughter/</loc>
     <lastmod>2022-10-22T12:11:00+07:00</lastmod>
@@ -163,16 +166,6 @@
                 />
   </url><url>
     <loc>https://hugo-theme-gruvbox.schnerring.net/cv/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://hugo-theme-gruvbox.schnerring.net/de/cv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo-theme-gruvbox.schnerring.net/cv/"
-                />
   </url><url>
     <loc>https://hugo-theme-gruvbox.schnerring.net/blog/hello-world/</loc>
   </url><url>
