@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>coding on AlfathDirk</title>
-    <link>https://hugo-theme-gruvbox.schnerring.net/tags/coding/</link>
+    <link>https://alfathdirk.github.io/tags/coding/</link>
     <description>Recent content in coding on AlfathDirk</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022</copyright>
-    <lastBuildDate>Tue, 11 Dec 2018 23:33:52 +0000</lastBuildDate><atom:link href="https://hugo-theme-gruvbox.schnerring.net/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Dec 2018 23:33:52 +0000</lastBuildDate><atom:link href="https://alfathdirk.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Signed apk to PlayStore</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/self-signed-apk/</link>
+      <link>https://alfathdirk.github.io/blog/self-signed-apk/</link>
       <pubDate>Tue, 11 Dec 2018 23:33:52 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/self-signed-apk/</guid>
+      <guid>https://alfathdirk.github.io/blog/self-signed-apk/</guid>
       <description>Hi today i want to share how to signed android apps to play store(react native,cordova,etc)
 your apk must be signed first.. signing your apk
 Generate your keystore

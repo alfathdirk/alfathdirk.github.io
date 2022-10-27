@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>react native on AlfathDirk</title>
-    <link>https://hugo-theme-gruvbox.schnerring.net/tags/react-native/</link>
+    <link>https://alfathdirk.github.io/tags/react-native/</link>
     <description>Recent content in react native on AlfathDirk</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022</copyright>
-    <lastBuildDate>Thu, 20 Dec 2018 19:35:38 +0000</lastBuildDate><atom:link href="https://hugo-theme-gruvbox.schnerring.net/tags/react-native/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Dec 2018 19:35:38 +0000</lastBuildDate><atom:link href="https://alfathdirk.github.io/tags/react-native/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Reactotron for Debugging React Native</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/using-reactotron-for-debugging-react-native/</link>
+      <link>https://alfathdirk.github.io/blog/using-reactotron-for-debugging-react-native/</link>
       <pubDate>Thu, 20 Dec 2018 19:35:38 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/using-reactotron-for-debugging-react-native/</guid>
+      <guid>https://alfathdirk.github.io/blog/using-reactotron-for-debugging-react-native/</guid>
       <description>Hi gais, kali ini gw mau bahas tools debuging ReactNative, tadi abis nyari tools debug, sebenernya ada banyak banget tapi gua nyoba salah satu nya, yaitu reactotron
 untuk mac install nya tinggal pake brew
 $ brew cask install reactotron $ npm i reactotron-react-native --save-dev # di project RN ya buka apps nya
@@ -23,10 +23,10 @@ import Reactotron from &amp;#39;reactotron-react-native&amp;#39; Reactotron .</d
     
     <item>
       <title>React Native change App/Package Name</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/react-native-change-app-package-name/</link>
+      <link>https://alfathdirk.github.io/blog/react-native-change-app-package-name/</link>
       <pubDate>Wed, 12 Dec 2018 00:07:01 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/react-native-change-app-package-name/</guid>
+      <guid>https://alfathdirk.github.io/blog/react-native-change-app-package-name/</guid>
       <description>There are things one may need to change in the release build for Android. Things like App Name are a case here. Suppose you start developing by initialising to a generic App Name and at the time of release one need to change to the actual App Name.
 Generate with correct names
 Before we move forward and change things in the final version of the app. There is a way to fix this from the beginning.</description>
@@ -34,10 +34,10 @@ Before we move forward and change things in the final version of the app. There 
     
     <item>
       <title>Signed apk to PlayStore</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/self-signed-apk/</link>
+      <link>https://alfathdirk.github.io/blog/self-signed-apk/</link>
       <pubDate>Tue, 11 Dec 2018 23:33:52 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/self-signed-apk/</guid>
+      <guid>https://alfathdirk.github.io/blog/self-signed-apk/</guid>
       <description>Hi today i want to share how to signed android apps to play store(react native,cordova,etc)
 your apk must be signed first.. signing your apk
 Generate your keystore

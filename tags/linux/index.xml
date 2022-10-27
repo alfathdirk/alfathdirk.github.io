@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on AlfathDirk</title>
-    <link>https://hugo-theme-gruvbox.schnerring.net/tags/linux/</link>
+    <link>https://alfathdirk.github.io/tags/linux/</link>
     <description>Recent content in linux on AlfathDirk</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022</copyright>
-    <lastBuildDate>Fri, 14 Dec 2018 00:14:30 +0000</lastBuildDate><atom:link href="https://hugo-theme-gruvbox.schnerring.net/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Dec 2018 00:14:30 +0000</lastBuildDate><atom:link href="https://alfathdirk.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AXEL alternative IDM for Linux/Mac</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/axel-alternative-idm-for-linux-mac/</link>
+      <link>https://alfathdirk.github.io/blog/axel-alternative-idm-for-linux-mac/</link>
       <pubDate>Fri, 14 Dec 2018 00:14:30 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/axel-alternative-idm-for-linux-mac/</guid>
+      <guid>https://alfathdirk.github.io/blog/axel-alternative-idm-for-linux-mac/</guid>
       <description>Axel is A light download accelerator for Linux. tapi axel ini berbentuk CLI / Command Line Interface..
 Nah Tujuan utamanya adalah bisa download , teserah lu mau download apaan aja .. Contoh gua mau download lagu dari link ini http://imondepression.com/sotd/mae%20-%20suspension.mp3
 tinggal tulis

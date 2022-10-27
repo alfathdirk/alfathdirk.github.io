@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AlfathDirk</title>
-    <link>https://hugo-theme-gruvbox.schnerring.net/</link>
+    <link>https://alfathdirk.github.io/</link>
     <description>Recent content on AlfathDirk</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022</copyright>
-    <lastBuildDate>Thu, 27 Oct 2022 21:25:00 +0700</lastBuildDate><atom:link href="https://hugo-theme-gruvbox.schnerring.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Oct 2022 21:25:00 +0700</lastBuildDate><atom:link href="https://alfathdirk.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nasihat untuk Zara</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/nasihat-untuk-zara/</link>
+      <link>https://alfathdirk.github.io/blog/nasihat-untuk-zara/</link>
       <pubDate>Thu, 27 Oct 2022 21:25:00 +0700</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/nasihat-untuk-zara/</guid>
+      <guid>https://alfathdirk.github.io/blog/nasihat-untuk-zara/</guid>
       <description>Nasihat online untuk si sayang # Perpisahan papi sama mami gakan mengurangi kasih sayang dan cinta kita ke kamu. papi selalu support kamu, cuma saat ini papi cuma bisa support kamu lewat doa.
 papi rindu sama kamu nak. kalo kamu punya masalah cerita sama papi sama mami sama sahabat atau guru kamu ya sayang. karena bercerita bakal mengurangi beban kamu dipikiran. menangis lah jika kamu ingin menangis. papi juga sering nangis kalo inget kamu terus papi cerita ke omi, ke baba anes tentang kerinduan papi ke kamu.</description>
     </item>
     
     <item>
       <title>When My Beloved Daughter Was Born</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/my-lovely-daughter/</link>
+      <link>https://alfathdirk.github.io/blog/my-lovely-daughter/</link>
       <pubDate>Sat, 22 Oct 2022 12:11:00 +0700</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/my-lovely-daughter/</guid>
+      <guid>https://alfathdirk.github.io/blog/my-lovely-daughter/</guid>
       <description>Aleeya Fatimah Azzahra # Dia lahir 04 januari 2021, di RS Brimob Depok kelapa dua sekitar jam 10 pagi di hari senin. dulu sebelum kamu lahir papi dan mami pas mau tidur sekitar jam 2.00 malem mami ketuban nya pecah. disitu ada om ageng lagi nginep. papi, mami sama om ageng nganter kamu ke bidan Ida. Mami berusaha supaya bisa normal tapi sampai jam 7 pagi ga ada kontraksi dan akhirnya di rujuk ke RS untuk di operasi caesar.</description>
     </item>
     
     <item>
       <title>Agama Bagi Manusia atau Sebaliknya</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/agama-bagi-manusia-atau-sebaliknya/</link>
+      <link>https://alfathdirk.github.io/blog/agama-bagi-manusia-atau-sebaliknya/</link>
       <pubDate>Thu, 27 Dec 2018 13:29:13 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/agama-bagi-manusia-atau-sebaliknya/</guid>
+      <guid>https://alfathdirk.github.io/blog/agama-bagi-manusia-atau-sebaliknya/</guid>
       <description>Agama Bagi Manusia atau Sebaliknya?
 Sebagian menyangka bahwa karakteristik zaman modern adalah segala sesuatu untuk manusia atau humanisme, termasuk agama untuk manusia.
 Padahal dalam pandangan tradisional, manusia untuk agama. Mereka mengatakan, dalam penafsiran klasik terhadap agama, kedudukan manusia lebih rendah dari agama dan akidah.
@@ -41,10 +41,10 @@ Sekian.</description>
     
     <item>
       <title>Using Reactotron for Debugging React Native</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/using-reactotron-for-debugging-react-native/</link>
+      <link>https://alfathdirk.github.io/blog/using-reactotron-for-debugging-react-native/</link>
       <pubDate>Thu, 20 Dec 2018 19:35:38 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/using-reactotron-for-debugging-react-native/</guid>
+      <guid>https://alfathdirk.github.io/blog/using-reactotron-for-debugging-react-native/</guid>
       <description>Hi gais, kali ini gw mau bahas tools debuging ReactNative, tadi abis nyari tools debug, sebenernya ada banyak banget tapi gua nyoba salah satu nya, yaitu reactotron
 untuk mac install nya tinggal pake brew
 $ brew cask install reactotron $ npm i reactotron-react-native --save-dev # di project RN ya buka apps nya
@@ -55,10 +55,10 @@ import Reactotron from &amp;#39;reactotron-react-native&amp;#39; Reactotron .</d
     
     <item>
       <title>Install php-Mongo driver on Windows XAMPP</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/install-php-mongo-driver-on-windows-xampp/</link>
+      <link>https://alfathdirk.github.io/blog/install-php-mongo-driver-on-windows-xampp/</link>
       <pubDate>Sat, 15 Dec 2018 21:05:17 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/install-php-mongo-driver-on-windows-xampp/</guid>
+      <guid>https://alfathdirk.github.io/blog/install-php-mongo-driver-on-windows-xampp/</guid>
       <description>Honestly im Linux/unix user, but in this case , i’ll make my MAC turn into jendela or fvcking windows
 I will configure MongoDB with PHP xampp. It is very easy to do. Oke let’s install latest XAMPP,
 cause i am using XAMPP ,
@@ -70,10 +70,10 @@ Check your Php version by going to http://localhost/phpinfo.</description>
     
     <item>
       <title>Bono Framework for FullREST API</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/bono-framework-for-fullrest-api/</link>
+      <link>https://alfathdirk.github.io/blog/bono-framework-for-fullrest-api/</link>
       <pubDate>Fri, 14 Dec 2018 15:38:36 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/bono-framework-for-fullrest-api/</guid>
+      <guid>https://alfathdirk.github.io/blog/bono-framework-for-fullrest-api/</guid>
       <description>Hello guys, kali ini saya akan membahas tentang menggunakan bono framework, yg menurut saya penggunaan nya lebih mudah dibanding expressjs
 Bono is light and modular Node.js web application framework (based on Koa.js) to develop api and website.
 Getting Started # npm i bono setelah itu kita buat satu file dengan nama index.js
@@ -82,10 +82,10 @@ const http = require(&amp;#39;http&amp;#39;); const Bundle = require(&amp;#39;bo
     
     <item>
       <title>AXEL alternative IDM for Linux/Mac</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/axel-alternative-idm-for-linux-mac/</link>
+      <link>https://alfathdirk.github.io/blog/axel-alternative-idm-for-linux-mac/</link>
       <pubDate>Fri, 14 Dec 2018 00:14:30 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/axel-alternative-idm-for-linux-mac/</guid>
+      <guid>https://alfathdirk.github.io/blog/axel-alternative-idm-for-linux-mac/</guid>
       <description>Axel is A light download accelerator for Linux. tapi axel ini berbentuk CLI / Command Line Interface..
 Nah Tujuan utamanya adalah bisa download , teserah lu mau download apaan aja .. Contoh gua mau download lagu dari link ini http://imondepression.com/sotd/mae%20-%20suspension.mp3
 tinggal tulis
@@ -94,39 +94,39 @@ axel -v -a -n8 http://imondepression.com/sotd/mae%20-%20suspension.mp3 -v bergun
     
     <item>
       <title>Perjuangan Hidup</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/perjuangan-hidup/</link>
+      <link>https://alfathdirk.github.io/blog/perjuangan-hidup/</link>
       <pubDate>Wed, 12 Dec 2018 23:17:17 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/perjuangan-hidup/</guid>
+      <guid>https://alfathdirk.github.io/blog/perjuangan-hidup/</guid>
       <description> Orang hebat tak dihasilkan melalui kemudahan,kesenangan, dan ketenangan. Mereka dibentuk dari kesukaran, rintangan dan air mata
 Imam Ali Bin Abu Thalib AS </description>
     </item>
     
     <item>
       <title>Share your life</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/share-your-imagine/</link>
+      <link>https://alfathdirk.github.io/blog/share-your-imagine/</link>
       <pubDate>Wed, 12 Dec 2018 23:17:17 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/share-your-imagine/</guid>
+      <guid>https://alfathdirk.github.io/blog/share-your-imagine/</guid>
       <description>Hembusan angin malam dengan kepulan asap pekat ditemani secangkir kopi hangat, memandang jauh imajinasi dalam pikir ini, ingin menemukan kesejatian makna arti diri dalam miliaran problema pada dimensi kecil ini, terlalu rumit jika di konsumsi sendiri, ya itulah penting nya berbagi suka dan lara :D</description>
     </item>
     
     <item>
       <title>Spotify Alpath Playlist</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/spotify-alpath-playlist/</link>
+      <link>https://alfathdirk.github.io/blog/spotify-alpath-playlist/</link>
       <pubDate>Wed, 12 Dec 2018 14:40:50 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/spotify-alpath-playlist/</guid>
+      <guid>https://alfathdirk.github.io/blog/spotify-alpath-playlist/</guid>
       <description>Iseng Share Playlist Di Blog yaa~
 Slow R&amp;amp;B # Yang Penting Enak # </description>
     </item>
     
     <item>
       <title>Hiduplah menjadi seorang yang baik</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/hiduplah-menjadi-seorang-yang-baik/</link>
+      <link>https://alfathdirk.github.io/blog/hiduplah-menjadi-seorang-yang-baik/</link>
       <pubDate>Wed, 12 Dec 2018 13:58:01 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/hiduplah-menjadi-seorang-yang-baik/</guid>
+      <guid>https://alfathdirk.github.io/blog/hiduplah-menjadi-seorang-yang-baik/</guid>
       <description>&amp;ldquo;Seorang teman (pun) takkan mau berbagi laramu. Seorang kekasih (pun) takkan mau menanggung dukamu. Seorang kerabat (pun) takkan mau menggantikanmu untuk tak tidur malam. Cukup perhatikan dirimu, jaga, manjakan dan jangan membebaninya dengan berbagai permasalahan melebihi kemampuanmu.
 Pastikan bahwa saat kau hancur, takkan ada yang mampu memperbaikinya selain dirimu sendiri. Saat kau kalah, takkan ada yang mampu menolong selain tekadmu. Kemampuanmu untuk berdiri kembali tak dimiliki oleh selainmu.
 Jangan mencari nilai dirimu lewat pandangan orang lain, carilah lewat suara hatimu.</description>
@@ -134,10 +134,10 @@ Jangan mencari nilai dirimu lewat pandangan orang lain, carilah lewat suara hati
     
     <item>
       <title>Surat dari Nabi Muhammad untuk pendeta Biara Santa Katarina</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/surat-dari-nabi-muhammad-untuk-pendeta-biara-santa-katarina/</link>
+      <link>https://alfathdirk.github.io/blog/surat-dari-nabi-muhammad-untuk-pendeta-biara-santa-katarina/</link>
       <pubDate>Wed, 12 Dec 2018 13:44:33 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/surat-dari-nabi-muhammad-untuk-pendeta-biara-santa-katarina/</guid>
+      <guid>https://alfathdirk.github.io/blog/surat-dari-nabi-muhammad-untuk-pendeta-biara-santa-katarina/</guid>
       <description>SURAT DARI NABI MUHAMMAD # Untuk Pendeta Biara Santa Katarina :
 Pada tahun 628 M ( 6 Hijriyah ), Nabi Muhammad SAW menulis surat kepada para Pendeta dari Biara St.Catherine ( Santa Katarina ) yang datang ke Madinah untuk mengunjungi Rosulullah.
 Surat Asli dengan Stempel Asli Nabi Muhammad diawetkan di Biara St. Catherine sampai tahun 1517 Masehi ketika Kekaisaran Ottoman Turki Sultan Selim I menginvasi Mesir &amp;amp; membawa surat asli Nabi Muhammad tersebut untuk dipajang di Musium Topkapi Istanbul.</description>
@@ -145,30 +145,30 @@ Surat Asli dengan Stempel Asli Nabi Muhammad diawetkan di Biara St. Catherine sa
     
     <item>
       <title>Rahasia Para Auliya dalam Kesejatian Programmer</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/rahasia-para-auliya-dalam-ihsan-sejat/</link>
+      <link>https://alfathdirk.github.io/blog/rahasia-para-auliya-dalam-ihsan-sejat/</link>
       <pubDate>Wed, 12 Dec 2018 10:46:00 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/rahasia-para-auliya-dalam-ihsan-sejat/</guid>
+      <guid>https://alfathdirk.github.io/blog/rahasia-para-auliya-dalam-ihsan-sejat/</guid>
       <description>Shalat Daim # Sebelum kita memahami Shalat Daim, ada baiknya kita memahami apa sebenarnya arti dari kata Shalat itu. Arti daripada shalat adalah mengingat-ingat GUSTI ALLAH (Dzikrullah) di waktu duduk, berdiri dan melakukan aktivitas dalam kehidupan ini. Sedangkan kata Daim itu memiliki arti terus-menerus ataupun tak pernah putus.
 Shalat sejati tidak hanya mengerjakan sembah raga atau tataran syariat mengerjakan sholat lima waktu. Shalat sejati adalah SHALAT DAIM, yaitu bersatunya semua indera dan tubuh kita untuk selalu memuji-Nya dengan kalimat penyaksian bahwa yang suci di dunia ini hanya Tuhan: HUWA ALLAH, DIA ALLAH.</description>
     </item>
     
     <item>
       <title>Scraping tokopedia with Luwak</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/scraping-tokopedia-with-luwak/</link>
+      <link>https://alfathdirk.github.io/blog/scraping-tokopedia-with-luwak/</link>
       <pubDate>Wed, 12 Dec 2018 10:06:39 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/scraping-tokopedia-with-luwak/</guid>
+      <guid>https://alfathdirk.github.io/blog/scraping-tokopedia-with-luwak/</guid>
       <description>Kali ini bahasan kita adalah scraping atau mengambil data tokopedia, bukan hacking tapi mengambil konten2 yg dapat diakses oleh semua pihak dengan memilih konten yg diperlukan untuk di tampilkan di situs milik kita
 Install Luwak # Luwak disini bukan white coffee yg aman dilambung ga bikin kembung, tapi tools untuk melakukan scrapping, yg setiap data web DOM akan langsung diolah menjadi bentuk JSON, amazing bukan tools satu ini, oke langsung aja masuk console/terminal kalian</description>
     </item>
     
     <item>
       <title>Customize your terminal</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/customize-your-terminal/</link>
+      <link>https://alfathdirk.github.io/blog/customize-your-terminal/</link>
       <pubDate>Wed, 12 Dec 2018 00:55:10 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/customize-your-terminal/</guid>
+      <guid>https://alfathdirk.github.io/blog/customize-your-terminal/</guid>
       <description>Ini adalah contoh beberapa syntax untuk merubah tampilan terminal console kalian
 cari variable PS1 jika setiap value nya dirubah interface pada command line bakal berubah oke ini gua kasih referensi nya
 PS1 : The value of PS1 is expanded and used as the primary prompt string. The default value is \s-\v\$ . PS2 : The value of this parameter is expanded as with PS1 and used as the secondary prompt string.</description>
@@ -176,10 +176,10 @@ PS1 : The value of PS1 is expanded and used as the primary prompt string. The de
     
     <item>
       <title>Tentang Dia dan Cinta</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/tentang-dia-dan-cinta/</link>
+      <link>https://alfathdirk.github.io/blog/tentang-dia-dan-cinta/</link>
       <pubDate>Wed, 12 Dec 2018 00:40:40 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/tentang-dia-dan-cinta/</guid>
+      <guid>https://alfathdirk.github.io/blog/tentang-dia-dan-cinta/</guid>
       <description>&amp;ldquo;Apapun yang kau katakan, bagaimanapun kau menolaknya, cinta akan tetap berada dimanapun, menunggu mu mengakui keberadaannya&amp;rdquo;
 Cinta untukku adalah bentuk dari kebersamaan yg terpadu, tentang semua material, tentang alam semesta. benar dan salah, cinta adalah seperti bentuk singularitas yg tak berawal dan tak berakhir.
 Bukan cinta jika mampu menutup akal, cinta dapat menggengam takdir, mengurai nestapa membawa mu terbang hingga ke singgasana yang penuh dengan keajaiban. Tak peduli apa yang orang katakan tentang kegilaan ini, karena memang benar Dia adalah cinta.</description>
@@ -187,30 +187,30 @@ Bukan cinta jika mampu menutup akal, cinta dapat menggengam takdir, mengurai nes
     
     <item>
       <title>Golden Ratio</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/golden-ratio/</link>
+      <link>https://alfathdirk.github.io/blog/golden-ratio/</link>
       <pubDate>Wed, 12 Dec 2018 00:31:53 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/golden-ratio/</guid>
+      <guid>https://alfathdirk.github.io/blog/golden-ratio/</guid>
       <description>Oke gais , pembicaraan kita sedikit ke rumus matematika , walau gua bukan ahli matematika , ya tapi gua bisa menghitung kapan kejombloan gua ini berakhir .. oke lets goo
 Gini Golden Ratio atau rasio emas adalah bentuk garis perbandingan dimana ada garis A dan B , yg mana garis A nilainya lebih panjang daripada B, jadi kalo nilai A+B itu = garis AB , kemudian garis A akan menjadi garis B</description>
     </item>
     
     <item>
       <title>Agile Development</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/agile-development/</link>
+      <link>https://alfathdirk.github.io/blog/agile-development/</link>
       <pubDate>Wed, 12 Dec 2018 00:28:18 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/agile-development/</guid>
+      <guid>https://alfathdirk.github.io/blog/agile-development/</guid>
       <description>Kali ini gua mau bahas soal agile development bukan di scope software development aja tp hampir semua jenis bisnis yang mungkin bisa gua implementasikan terhadap sasaran, thanks to Mr Rizky Avesena dan PT Xinix technology yg pernah mengenali metode ini ke gua
 Agile development menurut gua adalah sebuah metode pengembangan / pembangunan project yang lebih diprioritaskan terhadap feedback client dan memenuhi semua keinginan client secara cepat , ringkas dan tanggap</description>
     </item>
     
     <item>
       <title>Instagram Bot AutoLike</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/instagram-bot-autolike/</link>
+      <link>https://alfathdirk.github.io/blog/instagram-bot-autolike/</link>
       <pubDate>Wed, 12 Dec 2018 00:19:29 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/instagram-bot-autolike/</guid>
+      <guid>https://alfathdirk.github.io/blog/instagram-bot-autolike/</guid>
       <description>Udah lama ga nge blog, dan nyoba themes baru hexo
 Bot like instagram # perlu diketahui CODE INI BUKAN BUAT DAPETIN LIKE BANYAK
 This code for like your timeline friends photo/video automatically
@@ -222,10 +222,10 @@ const Ig = require(&amp;#39;alexis&amp;#39;); let ig = new Ig(); const TIMEOUT =
     
     <item>
       <title>React Native change App/Package Name</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/react-native-change-app-package-name/</link>
+      <link>https://alfathdirk.github.io/blog/react-native-change-app-package-name/</link>
       <pubDate>Wed, 12 Dec 2018 00:07:01 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/react-native-change-app-package-name/</guid>
+      <guid>https://alfathdirk.github.io/blog/react-native-change-app-package-name/</guid>
       <description>There are things one may need to change in the release build for Android. Things like App Name are a case here. Suppose you start developing by initialising to a generic App Name and at the time of release one need to change to the actual App Name.
 Generate with correct names
 Before we move forward and change things in the final version of the app. There is a way to fix this from the beginning.</description>
@@ -233,10 +233,10 @@ Before we move forward and change things in the final version of the app. There 
     
     <item>
       <title>Signed apk to PlayStore</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/self-signed-apk/</link>
+      <link>https://alfathdirk.github.io/blog/self-signed-apk/</link>
       <pubDate>Tue, 11 Dec 2018 23:33:52 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/self-signed-apk/</guid>
+      <guid>https://alfathdirk.github.io/blog/self-signed-apk/</guid>
       <description>Hi today i want to share how to signed android apps to play store(react native,cordova,etc)
 your apk must be signed first.. signing your apk
 Generate your keystore
@@ -248,10 +248,10 @@ keytool -importcert -file deployment_cert.der -keystore yourkeystore.keystore ja
     
     <item>
       <title>Line BOT Javascript</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/line-bot-javascript/</link>
+      <link>https://alfathdirk.github.io/blog/line-bot-javascript/</link>
       <pubDate>Wed, 06 Sep 2017 20:52:59 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/line-bot-javascript/</guid>
+      <guid>https://alfathdirk.github.io/blog/line-bot-javascript/</guid>
       <description>Oke gais, berhubung blog gua sebelum nya ke delete karena update blog dan lupa di push ke repo git gua mau bahas soal BOT LINE JAVASCRIPT
 Pre-Install # Required Node v8.x++
 Install # git clone https://github.com/alfathdirk/LineAlphatJS cd LineAlphatJS/ npm i Running # npm start dan akan muncul QRcode, silahkan scan atau paste di chat line kalian kemudian login
@@ -260,10 +260,10 @@ Silakan Comment jika kurang jelas.. Thanks !</description>
     
     <item>
       <title>Rindu di sabtu malam</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/rindu-di-sabtu-malam/</link>
+      <link>https://alfathdirk.github.io/blog/rindu-di-sabtu-malam/</link>
       <pubDate>Sat, 23 Feb 2013 21:14:49 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/rindu-di-sabtu-malam/</guid>
+      <guid>https://alfathdirk.github.io/blog/rindu-di-sabtu-malam/</guid>
       <description>gulita malam dengan awan menggiring warna kemerahan, dengan angin kosong dan kelip bintang tak saling menyapa.
 rindu saat aku dan dirimu mengerat telapak tangan, terpancar miliaran molekul nektar bersemayam dalam hati curahkan rindu, saat dikeheningan yg muncul hanya terdengar suaramu padahal kau hanya bayangan di imajinasi ini
 Bidadari dunia yang sesaat hanya menghiasi setengah perjalanan ku kini hanya sebuah catatan yang hanya bisa kutulis dalam ruang yang ku sekat, maaf atas segala kesalahanku dan kini ku basuh peluh air mata ku.</description>
@@ -271,28 +271,28 @@ Bidadari dunia yang sesaat hanya menghiasi setengah perjalanan ku kini hanya seb
     
     <item>
       <title>About</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/about/</link>
+      <link>https://alfathdirk.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/about/</guid>
+      <guid>https://alfathdirk.github.io/about/</guid>
       <description>Me # Hey my name is Alfath Thariq, but they call me ‘al’ or ‘fath’</description>
     </item>
     
     <item>
       <title>CV</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/cv/</link>
+      <link>https://alfathdirk.github.io/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/cv/</guid>
+      <guid>https://alfathdirk.github.io/cv/</guid>
       <description>Experience # Senior Software Engineer 2020-07-01 - present Mitrais — Technology company Bali Senior Software Engineer 2018-07-01 - 2020-05-01 PT Axiata Digital Labs — Technology company Jakarta Senior Software Engineer 2018-07-01 - 2020-05-01 PT Meteor Inovasi Digital — Technology company Jakarta Education # Information Technology (Bachelor) 2011-06-01 - 2012-01-01 University of Budiluhur 4.0 DB1101 - Basic SQL C2011 - C&amp;#43;&amp;#43; Introduction Javascript PHP Oracle Skills # Web Development (Good)</description>
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/hello-world/</link>
+      <link>https://alfathdirk.github.io/blog/hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/hello-world/</guid>
+      <guid>https://alfathdirk.github.io/blog/hello-world/</guid>
       <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick Start # Create a new post # $ hexo new &amp;#34;My New Post&amp;#34; More info: Writing
 Run server # $ hexo server More info: Server
@@ -301,10 +301,10 @@ Generate static files # $ hexo generate More info: Generating</description>
     
     <item>
       <title>Projects</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/projects/</link>
+      <link>https://alfathdirk.github.io/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/projects/</guid>
+      <guid>https://alfathdirk.github.io/projects/</guid>
       <description> </description>
     </item>
     

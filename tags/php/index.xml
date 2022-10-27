@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>php on AlfathDirk</title>
-    <link>https://hugo-theme-gruvbox.schnerring.net/tags/php/</link>
+    <link>https://alfathdirk.github.io/tags/php/</link>
     <description>Recent content in php on AlfathDirk</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022</copyright>
-    <lastBuildDate>Sat, 15 Dec 2018 21:05:17 +0000</lastBuildDate><atom:link href="https://hugo-theme-gruvbox.schnerring.net/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Dec 2018 21:05:17 +0000</lastBuildDate><atom:link href="https://alfathdirk.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install php-Mongo driver on Windows XAMPP</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/install-php-mongo-driver-on-windows-xampp/</link>
+      <link>https://alfathdirk.github.io/blog/install-php-mongo-driver-on-windows-xampp/</link>
       <pubDate>Sat, 15 Dec 2018 21:05:17 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/install-php-mongo-driver-on-windows-xampp/</guid>
+      <guid>https://alfathdirk.github.io/blog/install-php-mongo-driver-on-windows-xampp/</guid>
       <description>Honestly im Linux/unix user, but in this case , i’ll make my MAC turn into jendela or fvcking windows
 I will configure MongoDB with PHP xampp. It is very easy to do. Oke let’s install latest XAMPP,
 cause i am using XAMPP ,

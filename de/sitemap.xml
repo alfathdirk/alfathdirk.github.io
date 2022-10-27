@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hugo-theme-gruvbox.schnerring.net/de/</loc>
+    <loc>https://alfathdirk.github.io/de/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hugo-theme-gruvbox.schnerring.net/"
+                href="https://alfathdirk.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://hugo-theme-gruvbox.schnerring.net/de/"
+                href="https://alfathdirk.github.io/de/"
                 />
   </url><url>
-    <loc>https://hugo-theme-gruvbox.schnerring.net/de/categories/</loc>
+    <loc>https://alfathdirk.github.io/de/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hugo-theme-gruvbox.schnerring.net/categories/"
+                href="https://alfathdirk.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://hugo-theme-gruvbox.schnerring.net/de/categories/"
+                href="https://alfathdirk.github.io/de/categories/"
                 />
   </url><url>
-    <loc>https://hugo-theme-gruvbox.schnerring.net/de/series/</loc>
+    <loc>https://alfathdirk.github.io/de/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hugo-theme-gruvbox.schnerring.net/series/"
+                href="https://alfathdirk.github.io/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://hugo-theme-gruvbox.schnerring.net/de/series/"
+                href="https://alfathdirk.github.io/de/series/"
                 />
   </url><url>
-    <loc>https://hugo-theme-gruvbox.schnerring.net/de/tags/</loc>
+    <loc>https://alfathdirk.github.io/de/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hugo-theme-gruvbox.schnerring.net/tags/"
+                href="https://alfathdirk.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://hugo-theme-gruvbox.schnerring.net/de/tags/"
+                href="https://alfathdirk.github.io/de/tags/"
                 />
   </url>
 </urlset>

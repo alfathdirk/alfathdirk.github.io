@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bot on AlfathDirk</title>
-    <link>https://hugo-theme-gruvbox.schnerring.net/tags/bot/</link>
+    <link>https://alfathdirk.github.io/tags/bot/</link>
     <description>Recent content in bot on AlfathDirk</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022</copyright>
-    <lastBuildDate>Wed, 12 Dec 2018 00:19:29 +0000</lastBuildDate><atom:link href="https://hugo-theme-gruvbox.schnerring.net/tags/bot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Dec 2018 00:19:29 +0000</lastBuildDate><atom:link href="https://alfathdirk.github.io/tags/bot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instagram Bot AutoLike</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/instagram-bot-autolike/</link>
+      <link>https://alfathdirk.github.io/blog/instagram-bot-autolike/</link>
       <pubDate>Wed, 12 Dec 2018 00:19:29 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/instagram-bot-autolike/</guid>
+      <guid>https://alfathdirk.github.io/blog/instagram-bot-autolike/</guid>
       <description>Udah lama ga nge blog, dan nyoba themes baru hexo
 Bot like instagram # perlu diketahui CODE INI BUKAN BUAT DAPETIN LIKE BANYAK
 This code for like your timeline friends photo/video automatically
@@ -24,10 +24,10 @@ const Ig = require(&amp;#39;alexis&amp;#39;); let ig = new Ig(); const TIMEOUT =
     
     <item>
       <title>Line BOT Javascript</title>
-      <link>https://hugo-theme-gruvbox.schnerring.net/blog/line-bot-javascript/</link>
+      <link>https://alfathdirk.github.io/blog/line-bot-javascript/</link>
       <pubDate>Wed, 06 Sep 2017 20:52:59 +0000</pubDate>
       
-      <guid>https://hugo-theme-gruvbox.schnerring.net/blog/line-bot-javascript/</guid>
+      <guid>https://alfathdirk.github.io/blog/line-bot-javascript/</guid>
       <description>Oke gais, berhubung blog gua sebelum nya ke delete karena update blog dan lupa di push ke repo git gua mau bahas soal BOT LINE JAVASCRIPT
 Pre-Install # Required Node v8.x++
 Install # git clone https://github.com/alfathdirk/LineAlphatJS cd LineAlphatJS/ npm i Running # npm start dan akan muncul QRcode, silahkan scan atau paste di chat line kalian kemudian login
