@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZG Tuner Privacy Policy</title>
+<meta name="description" content="Privacy policy for the ZG Tuner Android app.">
+<link rel="canonical" href="https://alfathdirk.github.io/zgtuner-privacy/">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<style>
+  :root { --bg: #ffffff; --text: #1d2228; --muted: #5b6573; --accent: #d61f26; --border: #e3e6ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1216; --text: #e6eaf0; --muted: #8a94a3; --accent: #ff4a50; --border: #2a313a; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--border); }
+  .updated { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>ZG Tuner Privacy Policy</h1>
+<p class="updated">Last updated: October 13, 2026</p>
+
+<p>This privacy policy explains how the ZG Tuner Android app ("the app", package <code>com.zgtuner.tuner</code>) handles information. ZG Tuner is published by Alfath Thariq ("we").</p>
+
+<p><strong>In short: ZG Tuner does not collect, store on our servers, sell, or share any personal data.</strong> You don't need an account. The app has no ads, analytics or tracking.</p>
+
+<h2>1. Data stored on your device</h2>
+<p>Everything you create in the app stays on your phone. We cannot access it. This includes:</p>
+<ul>
+  <li>ECU definition files (.ini), tune files (.msq) and automatic tune backups</li>
+  <li>Datalogs (CSV/MSL) and imported dash themes</li>
+  <li>App settings, such as language, selected firmware and remote tuning PIN</li>
+  <li>Session change history, which is cleared when the app closes</li>
+</ul>
+<p>Uninstalling the app or clearing its storage deletes this data. Files you export to shared storage remain until you delete them.</p>
+
+<h2>2. ECU connection over USB</h2>
+<p>The app talks to your engine control unit (rusEFI or Speeduino) over a USB OTG cable. Data read from the ECU, like sensor values, tables, configuration and firmware signature, is processed only on your device.</p>
+
+<h2>3. Network connections</h2>
+<p>The app connects to the internet only for these purposes:</p>
+<ul>
+  <li><strong>Downloading ECU definition files.</strong> When you use auto-detect, the app downloads the matching public .ini file from <code>rusefi.com</code> or from GitHub (<code>api.github.com</code>, <code>raw.githubusercontent.com</code>). The request URL contains the firmware version or signature of your ECU, which identifies the firmware, not you. Like any web request, these servers can see your IP address. Their own privacy policies apply.</li>
+  <li><strong>App updates (Shorebird).</strong> The app uses <a href="https://shorebird.dev">Shorebird</a> to deliver code updates. On launch, the app checks Shorebird's servers for updates and sends the app ID, app version, platform, CPU architecture and a random install identifier. Shorebird uses the identifier only to count update installs. It is not linked to your identity. See <a href="https://shorebird.dev/privacy">Shorebird's privacy policy</a>.</li>
+  <li><strong>Remote tuning.</strong> If you turn on remote tuning, the app opens a direct connection between two phones on the same local Wi-Fi network or hotspot, protected by a PIN you set. ECU data travels only between those two devices and never goes through our servers or any third party.</li>
+</ul>
+
+<h2>4. Permissions</h2>
+<ul>
+  <li><strong>USB:</strong> to communicate with the ECU</li>
+  <li><strong>Internet and Wi-Fi state:</strong> for the downloads, update checks and remote tuning described above, and to show this phone's local network address for remote tuning</li>
+  <li><strong>Notifications, foreground service and wake lock:</strong> to keep an active ECU or remote session running and show its status while the app is in the background</li>
+  <li><strong>Battery optimization exemption:</strong> optional, so Android doesn't stop a long session</li>
+  <li><strong>Files:</strong> only the files you pick through the system file picker, for importing or exporting .ini, .msq, logs and themes</li>
+</ul>
+<p>The app does not access your location, contacts, camera, microphone, photos or accounts.</p>
+
+<h2>5. Sharing of data</h2>
+<p>We do not sell, rent or share personal data with anyone, because we don't collect any.</p>
+
+<h2>6. Children</h2>
+<p>ZG Tuner is a tool for vehicle tuning and is not directed at children under 13. We do not knowingly collect information from children.</p>
+
+<h2>7. Security</h2>
+<p>Downloads and update checks use HTTPS. Remote tuning sessions require a PIN and work only on your local network. Use remote tuning only on networks you trust.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>If this policy changes, we will update this page and the "Last updated" date above.</p>
+
+<h2>9. Contact</h2>
+<p>If you have questions about this policy, email <a href="mailto:alfathdirk@gmail.com">alfathdirk@gmail.com</a>.</p>
+</main>
+</body>
+</html>
